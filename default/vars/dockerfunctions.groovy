@@ -15,3 +15,7 @@ void DockerPush(String ImageName, String ImageTag) {
 void DockerTag(String ImageName, String OldTag, String NewTag) {
     sh "docker tag ${ImageName}:${OldTag} ${ImageName}:${NewTag}"
 }
+
+void DockerCleanUp(){
+    sh "docker system prune -a -f"
+}
