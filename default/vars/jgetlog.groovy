@@ -1,5 +1,5 @@
 import java.text.SimpleDateFormat
-@NonCPS
+
 def call(String filename) {
     //def logContent_eng = Jenkins.getInstance()
     //            .getItemByFullName(env.JOB_NAME)
